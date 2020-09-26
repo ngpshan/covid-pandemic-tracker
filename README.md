@@ -1,3 +1,3 @@
-# covid-19-tracker
+# Covid-19-tracker
 
-# statistics of total cases and a historical graph
+# Statistics of total cases and a historical graph
