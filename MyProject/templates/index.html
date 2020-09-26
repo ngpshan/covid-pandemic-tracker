@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+        <!--start covid19 tracker basic statistics active recovered deaths -->
+        <div class="p-2 row text-white" style='background-color:rgb(0,0,0,0.2)'>
+            <div class="mb-4 col d-flex flex-column justify-content-center align-items-center">
+                <h2 style='padding:0.5em'>Global Statistics</h2>
+
+            <div class="d-flex justify-content-center">
+                <div class="ml-3 mr-3 card border-dark mb-3" style="max-width: 18rem;">
+                  <h3 class="card-header text-dark">
+                      Cases
+                  </h3>
+                  <div class="card-body text-dark">
+                    <h3 class=" card-text">{{ cases }}</h3>
+                  </div>
+                </div>
+
+                <div class="ml-3 mr-3 card border-dark" style="max-width: 18rem;">
+                  <h3 class="card-header text-dark">
+                      Active <img src="https://img.icons8.com/ios/30/000000/virus.png"/>
+                  </h3>
+                  <div class="card-body text-dark">
+                    <h3 class="card-text">{{ active }}</h3>
+                  </div>
+                </div>
+
+                <div class="ml-3 mr-3 card border-dark mb-3" style="max-width: 18rem;">
+                  <h3 class="card-header text-dark">
+                      Deaths <img src="https://img.icons8.com/material-outlined/35/000000/thriller.png"/>
+                  </h3>
+                  <div class="card-body text-dark">
+                    <h3 class="card-text">{{ deaths }}</h3>
+                  </div>
+                </div>
+
+                <div class="ml-3 mr-3 card border-dark mb-3" style="max-width: 18rem;">
+                  <h3 class="card-header text-dark">
+                      Recovered <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M35.83333,150.5h100.33333c7.88333,0 14.33333,-6.45 14.33333,-14.33333v-79.90833c0,-5.73333 -3.58333,-11.10833 -9.31667,-13.25833l-55.18333,-21.5l-55.18333,21.5c-5.73333,2.15 -9.31667,7.525 -9.31667,13.25833v79.90833c0,7.88333 6.45,14.33333 14.33333,14.33333z" fill="#333333"></path><path d="M114.66667,86h-21.5v-21.5h-14.33333v21.5h-21.5v14.33333h21.5v21.5h14.33333v-21.5h21.5z" fill="#ffffff"></path></g></g></svg>
+                  </h3>
+                  <div class="card-body text-dark">
+                    <h3 class="card-text">{{ recovered }}</h3>
+                  </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <!--end covid19 tracker basic statistics active recovered deaths-->
+{% endblock %}
