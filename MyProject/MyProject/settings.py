@@ -18,9 +18,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Add .env variables anywhere before SECRET_KEY
-dotenv_file = os.path.join(BASE_DIR, ".env")
+dotenv_file = os.path.join(BASE_DIR, ".env") # <- New
 if os.path.isfile(dotenv_file):
     dotenv.load_dotenv(dotenv_file)
+
 
 # Update secret key
 SECRET_KEY = os.environ['SECRET_KEY'] # Instead of your actual secret key
